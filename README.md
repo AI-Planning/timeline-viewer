@@ -1,7 +1,7 @@
 Timeline Viewer
 ================
 
-![Image of Yaktocat](./timeline-logo.svg)
+![Logo Image](./timeline-logo.svg)
 
 A planning.domains plugin for visualizing a temporal planner's output as a timeline.
 
