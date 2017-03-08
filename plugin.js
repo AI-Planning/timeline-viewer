@@ -5,7 +5,7 @@ Timeline plugin! Written by Steve Levine (original google charts code by Tiago V
 function setup_timeline_gui() {
   // Name the divs
   var main_div = 'timeline_plugin_main_div';
-  var chart_div = 'timeline_plugin_chart_div'
+  var chart_div = 'timeline_plugin_chart_div';
   // Create a new tab for the timeline
   window.new_tab('Timeline Viewer', function(editor_name) {
     var html = '<div id="' + main_div + '" style="padding: 20px;"></div>';
@@ -129,7 +129,7 @@ function activity_to_table_row(match, id) {
   // to force the commanded coloring to be used.
   var unique_suffix = '';
   for (var i = 0; i < id; i++) {
-    unique_suffix += "\x1A";
+    //unique_suffix += "\x1A"; // Appears to be no longer needed!
   }
   return ["" + id, match[2] + unique_suffix,  start_time, end_time];
 }
