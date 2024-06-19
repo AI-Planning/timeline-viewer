@@ -90,9 +90,9 @@ function setup_timeline_gui() {
 // 'http://bicycle.csail.mit.edu/planning.domains/timeline-plugin/sha1.js'
 // 'http://bicycle.csail.mit.edu/planning.domains/timeline-plugin/tinycolor-min.js'
 function initialize_timeline_plugin() {
-  requirejs(['http://editor.planning.domains/plugins/featured/timeline-viewer/sha1.js'], function () {
+  requirejs(['https://editor.planning.domains/plugins/featured/timeline-viewer/sha1.js'], function () {
     // Loaded as CryptoJS global variable
-    requirejs(['http://editor.planning.domains/plugins/featured/timeline-viewer/tinycolor-min.js'], function(m) {
+    requirejs(['https://editor.planning.domains/plugins/featured/timeline-viewer/tinycolor-min.js'], function(m) {
       tinycolor = m;
       setup_timeline_gui();
     });
@@ -155,7 +155,7 @@ define(function () {
         author: "Steve Levine",
         email: "sjlevine@mit.edu",
         description: "Visualize the timeline of a plan from a temporal planner's output",
-        thumbnail: "http://editor.planning.domains/plugins/featured/timeline-viewer/timeline-logo.svg",
+        thumbnail: "https://editor.planning.domains/plugins/featured/timeline-viewer/timeline-logo.svg",
 
         // This will be called whenever the plugin is loaded or enabled
         initialize: function() {
